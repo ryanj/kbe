@@ -9,11 +9,11 @@ A job is a supervisor for pods carrying out batch processes, that is,
 a process that runs for a certain time to completion, for example a calculation
 or a backup operation.
 
-Let's create a [job](https://github.com/mhausenblas/kbe/blob/master/specs/jobs/job.yaml)
+Let's create a [job](https://github.com/openshift-evangelists/kbe/blob/master/specs/jobs/job.yaml)
 called `countdown` that supervises a pod counting from 9 down to 1:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/jobs/job.yaml
+$ kubectl create -f https://raw.githubusercontent.com/openshift-evangelists/kbe/master/specs/jobs/job.yaml
 ```
 
 You can see the job and the pod it looks after like so:

@@ -28,11 +28,11 @@ $ kubectl label nodes 192.168.99.100 shouldrun=here
 node "192.168.99.100" labeled
 ```
 
-Now we can create a [pod](https://github.com/mhausenblas/kbe/blob/master/specs/nodes/pod.yaml)
+Now we can create a [pod](https://github.com/openshift-evangelists/kbe/blob/master/specs/nodes/pod.yaml)
 that gets scheduled on the node with the label `shouldrun=here`:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/nodes/pod.yaml
+$ kubectl create -f https://raw.githubusercontent.com/openshift-evangelists/kbe/master/specs/nodes/pod.yaml
 
 $ kubectl get pods --output=wide
 NAME                      READY     STATUS    RESTARTS   AGE       IP               NODE

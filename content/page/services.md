@@ -14,14 +14,14 @@ pods up-to-date is the job of [kube-proxy](https://kubernetes.io/docs/admin/kube
 a process that runs on every node, which queries the API server to learn about
 new services in the cluster.
 
-Let's create a pod supervised by an [RC](https://github.com/mhausenblas/kbe/blob/master/specs/services/rc.yaml)
-and a [service](https://github.com/mhausenblas/kbe/blob/master/specs/services/svc.yaml)
+Let's create a pod supervised by an [RC](https://github.com/openshift-evangelists/kbe/blob/master/specs/services/rc.yaml)
+and a [service](https://github.com/openshift-evangelists/kbe/blob/master/specs/services/svc.yaml)
 along with it:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/services/rc.yaml
+$ kubectl create -f https://raw.githubusercontent.com/openshift-evangelists/kbe/master/specs/services/rc.yaml
 
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/services/svc.yaml
+$ kubectl create -f https://raw.githubusercontent.com/openshift-evangelists/kbe/master/specs/services/svc.yaml
 ```
 
 Now we have the supervised pod running:

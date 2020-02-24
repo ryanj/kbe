@@ -21,4 +21,4 @@ This is a hands-on introduction to Kubernetes. Browse the examples:
 
 
 Want to try it out yourself? You can run all this on Red Hat's distribution of
-Kubernetes, OpenShift. Follow the instructions [here](/diy/) for a local setup or sign up for [openshift.com](https://openshift.com/) for an online environment.
+Kubernetes, OpenShift. To follow along, set up your own environment at [try.openshift.com](https://try.openshift.com/).

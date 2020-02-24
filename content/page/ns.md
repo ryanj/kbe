@@ -37,11 +37,11 @@ No resource quota.
 No resource limits.
 ```
 
-Let's now create a new [namespace](https://github.com/mhausenblas/kbe/blob/master/specs/ns/ns.yaml)
+Let's now create a new [namespace](https://github.com/openshift-evangelists/kbe/blob/master/specs/ns/ns.yaml)
 called `test` now:
 
 ```bash
-$ kubectl create -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/ns/ns.yaml
+$ kubectl create -f https://raw.githubusercontent.com/openshift-evangelists/kbe/master/specs/ns/ns.yaml
 namespace "test" created
 
 $ kubectl get ns
@@ -54,11 +54,11 @@ openshift-infra   Active    13d
 test              Active    3s
 ```
 
-To launch a [pod](https://github.com/mhausenblas/kbe/blob/master/specs/ns/pod.yaml) in
+To launch a [pod](https://github.com/openshift-evangelists/kbe/blob/master/specs/ns/pod.yaml) in
 the newly created namespace `test`, do:
 
 ```bash
-$ kubectl create --namespace=test -f https://raw.githubusercontent.com/mhausenblas/kbe/master/specs/ns/pod.yaml
+$ kubectl create --namespace=test -f https://raw.githubusercontent.com/openshift-evangelists/kbe/master/specs/ns/pod.yaml
 ```
 
 Note that using above method the namespace becomes a runtime property, that is,
